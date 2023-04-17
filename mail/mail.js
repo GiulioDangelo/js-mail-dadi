@@ -6,12 +6,18 @@ let emailList = [
     'placeholder@test.com',
 ];
 
+let prova = false
+
 for (let i = 0; i < emailList.length; i++) {
 
     if (email == emailList[i]) {
-        console.log('vero')
+        prova = true 
     }
-    else{
-        console.log('falso')
-    }
+}
+
+if (prova) {
+    console.log('email trovata')
+}
+else{
+    console.log('email non trovata')
 }
