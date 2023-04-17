@@ -7,12 +7,12 @@ buttonEle.addEventListener("click",function(){
     const cpuEle = document.getElementById("cpu-result").innerHTML=(cpuNum)
     
     if (playerNum > cpuNum) {
-        document.getElementById("conclusion").innerHTML=('player win')
+        document.getElementById("conclusion").innerHTML=('Player win')
     }
     else if (playerNum == cpuNum) {
-        document.getElementById("conclusion").innerHTML=("it's a draw")
+        document.getElementById("conclusion").innerHTML=("It's a draw")
     }
     else{
-        document.getElementById("conclusion").innerHTML=('cpu win')
+        document.getElementById("conclusion").innerHTML=('Cpu win')
     }
 })
