@@ -2,7 +2,7 @@ const btn = document.getElementById("check");
 
 btn.addEventListener("click", function () {
     const email = document.getElementById("email").value;
-    let prova = false;
+    let flag = false;
     let emailList = [
         'emailprova@test.com',
         'nonloso@test.com',
@@ -13,12 +13,12 @@ btn.addEventListener("click", function () {
     for (let i = 0; i < emailList.length; i++) {
     
         if (email == emailList[i]) {
-            prova = true 
+            flag = true 
         }
     }
     
     
-    if (prova) {
+    if (flag) {
         document.getElementById("result").innerHTML=('Email trovata')
         document.querySelector(".on-list").style.display="block"
         document.querySelector(".not-on-list").style.display="none"
