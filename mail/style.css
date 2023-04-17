@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+input,button{
+    font-size:25px ;
+}
+
+#result{
+    text-align: center;
+    margin: 10px;
+}
+
+.on-list{
+    display: none;
+}
+
+.not-on-list{
+    display: none;
+}
+
+.on-list img,.not-on-list img{
+    height: 450px;
+}

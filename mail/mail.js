@@ -1,23 +1,33 @@
-const email = prompt('inserire mail');
+const btn = document.getElementById("check");
 
-let emailList = [
-    'emailprova@test.com',
-    'nonloso@test.com',
-    'placeholder@test.com',
-];
-
-let prova = false
-
-for (let i = 0; i < emailList.length; i++) {
-
-    if (email == emailList[i]) {
-        prova = true 
+btn.addEventListener("click", function () {
+    const email = document.getElementById("email").value;
+    let prova = false;
+    let emailList = [
+        'emailprova@test.com',
+        'nonloso@test.com',
+        'placeholder@test.com',
+    ];
+    
+    
+    for (let i = 0; i < emailList.length; i++) {
+    
+        if (email == emailList[i]) {
+            prova = true 
+        }
     }
-}
+    
+    
+    if (prova) {
+        document.getElementById("result").innerHTML=('Email trovata')
+        document.querySelector(".on-list").style.display="block"
+        document.querySelector(".not-on-list").style.display="none"
+    }
+    else{
+        document.getElementById("result").innerHTML=('Email non trovata');
+        document.querySelector(".not-on-list").style.display="block"
+        document.querySelector(".on-list").style.display="none"
+    }
+    
+})
 
-if (prova) {
-    console.log('email trovata')
-}
-else{
-    console.log('email non trovata')
-}
